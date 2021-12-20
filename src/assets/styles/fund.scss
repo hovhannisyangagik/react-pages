@@ -1,0 +1,218 @@
+.fund-container {
+  width: 28%;
+  min-height: 28.8vw;
+  background-color: #12111f;
+  padding: 1% 1.2% 0 1.2%;
+  border-radius: 1vw;
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2px;
+    border-radius: 0.9vw;
+    background: linear-gradient(to top, #0b0819, #45415d);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+
+  .top-fund-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .fund-allocations {
+      h3 {
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 1.4vw;
+      }
+    }
+    .assets {
+      background: #6e56f80f;
+      padding: 2% 3%;
+      p {
+        line-height: 1.4vw;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.1vw;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .crypto-frame {
+    .crypto-money {
+      padding: 4.4% 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .crypto-inner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .image {
+          margin-right: 2%;
+          img {
+            width: 2.45vw;
+            height: 2.45vw;
+          }
+        }
+
+        .name-procent {
+          width: 65%;
+          line-height: 1.1vw;
+          .name {
+            color: white;
+            font-family: "Poppins", sans-serif;
+            font-size: 1.2vw;
+          }
+          .procent {
+            display: flex;
+            align-items: center;
+            .procent-line {
+              width: 100%;
+              background-color: rgba(110, 86, 248, 0.15);
+              border-radius: 0.5vw;
+              height: 0.4vw;
+              margin-right: 3%;
+              position: relative;
+
+              &::before {
+                content: "";
+                width: 70%;
+                height: 0.5vw;
+                border-radius: 0.5vw;
+
+                position: absolute;
+                background-color: #f7931a;
+                top: 50%;
+                transform: translateY(-50%);
+              }
+            }
+            p {
+              color: #a3a3a3;
+              font-family: "Poppins", sans-serif;
+              font-size: 1vw;
+            }
+          }
+        }
+      }
+
+      .money {
+        p {
+          color: white;
+          font-family: "Poppins", sans-serif;
+
+          font-size: 1vw;
+        }
+      }
+    }
+    .bottom-line {
+      width: 100%;
+      height: 0.1vw;
+      background-color: rgba(110, 86, 248, 0.25);
+      border-radius: 0.5vw;
+    }
+    .procent-line-second {
+      width: 100%;
+      background-color: rgba(110, 86, 248, 0.15);
+      border-radius: 0.5vw;
+      height: 0.4vw;
+      margin-right: 3%;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 70%;
+        height: 0.5vw;
+        border-radius: 0.5vw;
+
+        position: absolute;
+        background: linear-gradient(
+          90deg,
+          rgba(22, 232, 172, 1) 0%,
+          rgba(92, 160, 201, 1) 50%,
+          rgba(194, 57, 244, 1) 100%
+        );
+
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .procent-line-third {
+      width: 100%;
+      background-color: rgba(110, 86, 248, 0.15);
+      border-radius: 0.5vw;
+      height: 0.4vw;
+      margin-right: 3%;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 70%;
+        height: 0.5vw;
+        border-radius: 0.5vw;
+        position: absolute;
+        background: #3ceaaa;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .procent-line-forth {
+      width: 100%;
+      background-color: rgba(110, 86, 248, 0.15);
+      border-radius: 0.5vw;
+      height: 0.4vw;
+      margin-right: 3%;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 70%;
+        height: 0.5vw;
+        border-radius: 0.5vw;
+        position: absolute;
+        background: #f7931a;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .procent-line-fivth {
+      width: 100%;
+      background-color: rgba(110, 86, 248, 0.15);
+      border-radius: 0.5vw;
+      height: 0.4vw;
+      margin-right: 3%;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 70%;
+        height: 0.5vw;
+        border-radius: 0.5vw;
+
+        position: absolute;
+        background: linear-gradient(
+          90deg,
+          rgba(22, 232, 172, 1) 0%,
+          rgba(92, 160, 201, 1) 50%,
+          rgba(194, 57, 244, 1) 100%
+        );
+
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

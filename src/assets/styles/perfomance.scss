@@ -1,0 +1,142 @@
+.perfomance-container {
+  width: 70.5%;
+  min-height: 28.8vw;
+  background-color: #0b0819;
+  border-radius: 1vw;
+  padding: 1.2% 1% 4% 1%;
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2px;
+    border-radius: 0.9vw;
+    background: linear-gradient(to top, #0b0819, #45415d);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+
+  .above {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      display: flex;
+      align-items: center;
+      h3 {
+        margin-right: 0.6vw;
+        color: white;
+        font-size: 1.5vw;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+      }
+
+      .number {
+        display: flex;
+        align-items: center;
+        background: #6e56f80f;
+        padding: 2% 4%;
+        border-radius: 0.3vw;
+        p {
+          color: #509980;
+          font-size: 1.3vw;
+          font-family: "Poppins", sans-serif;
+          font-weight: 500;
+        }
+        img {
+          margin-right: 0.1vw;
+          width: 0.7vw;
+        }
+      }
+    }
+
+    .months {
+      background: #6e56f80f;
+      padding: 0 2%;
+      border-radius: 2vw;
+      display: flex;
+      position: relative;
+      p {
+        font-size: 1.3vw;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+      }
+      .first {
+        left: 0;
+        position: absolute;
+        background: #29234e;
+        border: 2px solid #6e56f8;
+        border-radius: 1.5vw;
+        padding: 0 0.6vw;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        p {
+          color: #6e56f8;
+        }
+      }
+
+      .second {
+        margin-left: 2.5vw;
+        display: flex;
+        align-items: center;
+        p {
+          padding: 0 0.5vw;
+          color: #94949e;
+          font-size: 1.2vw;
+          font-weight: 400;
+          border-right: 1px solid #282057;
+        }
+      }
+
+      .third {
+        display: flex;
+        align-items: center;
+        p {
+          padding: 0 0.5vw;
+          color: #94949e;
+          font-size: 1.2vw;
+          font-weight: 400;
+          border-right: 1px solid #282057;
+        }
+      }
+
+      .forth {
+        display: flex;
+        align-items: center;
+        p {
+          padding: 0 0.5vw;
+          color: #94949e;
+          font-size: 1.2vw;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+tspan {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1vw !important;
+}
+
+.recharts-cartesian-axis-tick-line {
+  display: none !important;
+}

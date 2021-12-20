@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/bg-blue.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  height: max-content;
+}
+
+.App {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.inner {
+  padding: 14% 8% 14% 8%;
+}
+
+.first-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+.second-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@import "./fund.scss";
+@import "./manager.scss";
+@import "./perfomance.scss";
+@import "./time.scss";
